@@ -1,0 +1,166 @@
+.mainitem{
+    height: 350px;
+    width: 100%;
+}
+
+.item1{
+    border: 1px black solid;
+    width: 200px;
+    height: 200px;
+}
+
+.item2, .item3, .item4, .item5{
+    width: 100px;
+    height: 100px
+}
+
+.item2{
+    position: relative;
+    left:0;
+    top:0;
+    background-color: green;
+}
+
+.item3{
+    position: relative;
+    left:100px;
+    top:-100px;
+    background-color: white;
+}
+
+.item4{
+    position: relative;
+    left:0;
+    top:-100px;
+    background-color: black;
+}
+
+.item5{
+    position: relative;
+    left:100px;
+    top:-200px;
+    background-color: red;
+}
+.item6
+{
+    position: relative;
+    top:-200px;
+    left:250px;
+    background-color: rgb(181, 181, 181);
+    border: 1px black solid;
+    height: 150px;
+    width: 350px;
+    padding: 25px;
+}
+
+.item7{
+    background-color: red;
+    width:350px;
+    height: 150px;
+}
+
+
+.item8,.item9,.item10{
+    position: absolute;
+    top: 175px;
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+}
+
+.item8{
+    left:150px;
+}
+
+.item9{
+    left:315px;
+}
+
+.item10{
+    left: 480px;
+}
+
+
+
+
+.main{
+    width: 840px;
+    height: 250px;
+    border: 2px black solid;
+}
+
+.item01, .item02, .item03, .item04, .item05{
+    width: 150px;
+    height: 200px;
+    background-color: darkred;
+    color: white;
+}
+
+
+
+
+.item01{
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+.item02{
+    position: absolute;
+    left: 180px;
+    top: 30px;
+}
+
+.item03{
+    position: absolute;
+    left: 340px;
+    top: 30px;
+}
+
+.item04{
+    position: absolute;
+    left:500px;
+    top:30px;
+}
+
+.item05{
+    position: absolute;
+    left:660px;
+    top:30px;
+}
+
+.head{
+    position: relative;
+    top: 10%;
+    width: 100%;
+    height: 35px;
+    display:
+    background-color: inherit;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+    color: white;
+}
+
+.image{
+    display: block;
+    height: 150px;
+    width: 100%;
+    background-color: white;
+}
+
+img{
+    position: relative;
+    top:25px;
+    left:25px;
+    height: 100px;
+    width: 100px;
+}
+
+.item01:hover,.item02:hover,.item03:hover,.item04:hover,.item05:hover{
+    outline: 1px black solid;
+    background-color: rgb(217, 165, 49);
+    color: red;
+    transition: .5s ease-in;
+}

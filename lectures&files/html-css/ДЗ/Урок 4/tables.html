@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        .firsttable, .secondtable{
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+        .firsttable{
+            height: 180px;
+            width: 600px;
+        }
+        .secondtable{
+            width: 350px;
+            height: 75px;
+        }
+
+        td{
+            border: 1px black solid;
+        }
+        .row1, .row3{
+            height: 10%;
+            width: 200px;
+        }
+        .twocols{
+            width:400px;
+            padding-left: 25px;
+        }
+        .firstcol{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="">
+        <table class="firsttable">
+            <!-- Первая строка -->
+            <tr class="row1">
+                <td rowspan="3">1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <!-- Вторая строка -->
+
+            <tr>
+                <td colspan="2">5</td>
+            </tr>
+            <!-- Третья строка -->
+
+            <tr class="row3">
+                <td>1</td>
+                <td>6</td>
+            </tr>
+        </table>
+
+        <br><br>
+
+        <table class="firsttable">
+            <tr class="row1">
+                <td class="twocols" colspan="2"></td>
+                <td></td>
+            </tr>
+            <tr class="">
+                <td class="firstcol"></td>
+                <td class="twocols" colspan="2" rowspan="2">
+
+                    <table class="secondtable">
+                        <tr class="row1">
+                            <td></td>
+                            <td rowspan="3"></td>
+                            <td rowspan="2"></td>
+                        </tr>
+                        <tr class="row1">
+                            <td rowspan="2"></td>
+                        </tr>
+                        <tr class="row1">
+                            <td></td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+            <tr class="">
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

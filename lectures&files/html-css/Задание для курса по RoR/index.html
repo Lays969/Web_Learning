@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<!-- Планируется колонизация Марса. Нужен информационный ресурс. Нам выпала честь сверстать для него меню и после этого попасть в ряды колонистов.
+Уже есть в наличии каркас меню и подменю (https://pastebin.com/Yhf8Cce2).
+Сверстайте (HTML/CSS), чтобы при наведении на подпункт меню Салют показывались под-под-пункты орбитальных станций СССР — Салют-1, Салют-3, Салют-5.
+-->
+    <meta charset="UTF-8">
+    <title>Колонизация Марса</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        ul#top-menu {
+            position: relative;
+        }
+        ul#top-menu li {
+            list-style: none;
+        }
+        ul#top-menu > li {
+            display: inline-block;
+        }
+
+        ul#top-menu > li ul#sub-menu {
+            display: none;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            padding-top: 10px;
+        }
+        ul#top-menu > li:hover ul#sub-menu {
+            display: block;
+        }
+
+        ul#sub-menu > li ul#right-menu {
+            display: none;
+            position: absolute;
+            top: 10px;
+            left: 150px;
+            padding-left: 5px;
+        }
+        ul#sub-menu > li:hover ul#right-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul id="top-menu">
+            <li>
+                <a href="#">
+                    Космические станции
+                    <ul id="sub-menu">
+                        <li>
+                            <a href="#">
+                                Салют
+                                <ul id="right-menu">
+                                    <li>Салют-1</li>
+                                    <li>Салют-3</li>
+                                    <li>Салют-5</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li><a href="#">Мир</a></li>
+                        <li><a href="#">МКС</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li><a href="#">Космические программы</a></li>
+            <li><a href="#">Ландшафты Марса</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

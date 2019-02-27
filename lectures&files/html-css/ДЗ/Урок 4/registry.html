@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h2>Регистрация</h2>
+    </header>
+    <main>
+        <div class="">
+            <ul class="nav">
+                <li class="menu-item"><a href="index.html">Главная</a></li>
+                <li class="menu-item"><a href="catalog.html">Каталог</a></li>
+                <li class="menu-item"><a href="article.html">Статьи</a></li>
+                <li class="menu-item"><a href="galery.html">Галерея</a></li>
+                <li class="menu-item active"><a href="registry.html">Регистрация</a></li>
+                <li class="menu-item"><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="Registration">
+            <fieldset>
+                <legend>Персональные данные</legend>
+                <p>Фамилия</p>
+                <input type="text" name="secondname">
+
+                <p>Имя</p>
+                <input type="text" name="name">
+
+                <p>Отчество</p>
+                <input type="text" name="sername">
+
+                <p>Добавьте фотографию</p>
+                <input type="file" name="photo">
+
+                <p>Адрес электронной почты</p>
+                <input type="email">
+
+                <p>Пароль</p>
+                <input type="password">
+            </fieldset>
+            <fieldset>
+                <legend>Дополнительная информация</legend>
+                <p>Адрес сайта</p>
+                <input type="text" placeholder="http://">
+                <p>Выберите пол</p>
+                <select name="Пол" multiple="multiple" size="2">
+                <option value="1">Мужской</option>
+                <option value="2">Женский</option>
+            </select>
+                <p>Выберите дату рождения</p>
+                <input type="date">
+                <p>Напишите о себе</p>
+                <textarea cols="50" rows="3" name="address" placeholder="О себе"></textarea><br><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <input type="submit" value="Отправить"></input>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Сбросить"></input>
+            </fieldset>
+
+        </div>
+<br><br>
+        <div class="">
+            <table>
+                <tr class="Column">
+                    <td align="center">Фамилия</td>
+                    <td align="center"><input type="text" name="secondname"></td>
+                </tr>
+                <tr class="Column">
+                    <td align="center">Имя</td>
+                    <td align="center"><input type="text" name="name"></td>
+                </tr>
+                <tr class="Column">
+                    <td align="center">Отчество</td>
+                    <td align="center"><input type="text" name="sername"></td>
+                </tr>
+                <tr class="Column">
+                    <td align="center">Добавьте фотографию</td>
+                    <td align="right"><input type="file" name="photo"></td>
+                </tr>
+                <tr class="Column">
+                    <td align="center">Адрес электронной почты</td>
+                    <td align="center"><input type="email" name="email"></td>
+                </tr>
+                <tr class="Column">
+                    <td align="center">Пароль</td>
+                    <td align="center"><input type="password" name="password"></td>
+                </tr>
+                <tr class="Column">
+                    <td align="center">Подтвердите пароль</td>
+                    <td align="center"><input type="password"></td>
+                </tr>
+                <tr class="Column">
+                    <td align="center">Адрес сайта</td>
+                    <td align="center"><input placeholder="http://"></td>
+                </tr>
+                <tr class="Column">
+                    <td align="center">Выберите пол</td>
+                    <td align="center">
+                        <input name="pol" type="radio" name="Man" checked>Мужской<br>
+                        <input name="pol" type="radio" name="Woman">Женский</td>
+                </tr>
+                <t class="Column">
+                    <td align="center">Дата рождения</td>
+                    <td align="center"><input type="date"></td>
+                </tr>
+                <tr class="Column">
+                    <td align="center">Напишите <br>о себе</td>
+                    <td align="center">
+                        <textarea cols="30" rows="5" name="address" placeholder="О себе"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Отправить"></input>
+                        <input type="submit" value="Сбросить"></input>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy Защищено мной</p>
+    </footer>
+</body>
+
+</html>

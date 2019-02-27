@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.siteheader{
+    width: 100%;
+}
+
+.headcontainer{
+    width:1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head1{
+    height: 15px;
+    width: 1600px;
+    background-color: #2ecc71;
+
+}
+
+.head2{
+    position: absolute;
+    height: 600px;
+    width: 1600px;
+    background-image: url(../flashback/images/slider.png);
+    background-position-x: -14px;
+    background-position-y: -49px;
+    background-size: 1666px 1104px;
+}
+
+.headitem1, .headitem2, .headitem3, .headitem4, .fon, svg{
+    position: absolute;
+}
+
+.headitem1{
+    left: 320px;
+    top: 140px;
+    height: 85px;
+    width: 195px;
+    background-image: url(../flashback/images/logo_03.png);
+    background-size: 195px 85px;
+}
+
+.headitem2{
+    left:335px;
+    top: 264px;
+    width: 450px;
+    line-height: 1.5em;
+    font-family: HelveticaNeue, sans-serif;
+    font-size: 21px;
+    color: #fff;
+}
+
+.headitem3{
+    left: 992px;
+    top: 134px;
+    height: 260px;
+    width: 168px;
+    background-image: url(../flashback/images/player_03.png);
+    background-position-x: -121px;
+    background-position-y: -29px;
+    background-size: 436px 289px;
+    background-repeat: no-repeat;
+}
+
+.fon{
+    width: 0;
+    height: 0;
+    display: block;
+    border-top: 260px solid #ffffff21;
+    border-right: 69px solid transparent;
+}
+
+.overlay{
+    position: absolute;
+    top:-260px;
+    width: 69px;
+    height: 130px;
+    display:block;
+    background: linear-gradient(105deg, #ffffff75 0%, #ffffff2b 60%);
+}
+
+.icon1, .icon2, .icon3{
+    position: absolute;
+    top: 371px;
+    background-color: black;
+    width: 53px;
+    height: 53px;
+    border-radius: 27px;
+    opacity: 0.5;
+    display: block;
+}
+
+.icon1:hover, .icon2:hover, .icon3:hover{
+    background-color: #2ecc71;
+    opacity: 1;
+}
+
+.icon1{
+    left: 335px;
+}
+
+.icon2{
+    left: 403px;
+}
+
+.icon3{
+    left: 471px;
+}
+
+.iconimage1, .iconimage2, .iconimage3{
+    position: relative;
+    top:13px;
+    left:16px;
+    height: 28px;
+    width: 24px;
+    background-image:url(../flashback/images/apple_03.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    opacity: 1;
+}
+
+.iconimage2{
+    left:15.5px;
+    background-image:url(../flashback/images/android_03.png);
+}
+
+.iconimage3{
+    top: 14px;
+    left: 13.5px;
+    background-image:url(../flashback/images/windows_03.png);
+}
+
+main{
+    position: relative;
+    width: 100%;
+}
+
+.contrainer{
+    position: relative;
+    top:600px;
+    width:1600px;
+    height: 355px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px black solid;
+}
+
+.contitems{
+    position: relative;
+    width: 1180px;
+    height: 300px;
+    margin: 60px auto  55px auto;
+}
+
+.iconcontainer1, .iconcontainer2, .iconcontainer3{
+    left:180px;
+    height: 230px;
+    width: 320px;
+    display: inline-block;
+    margin-left: 52px;
+    margin-right: 52px;
+    box-sizing: border-box;
+}
+
+.iconcontainer1:first-child{
+    margin-left: auto;
+}
+
+.iconcontainer3:last-child{
+    margin-right: auto;
+}
+
+
+.mainitem1, .mainitem2, .mainitem3, .mainitem4, .mainitem5, .mainitem6{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainitem1, .mainitem2,  .mainitem3{
+    position: relative;
+    background-color: #2ecc71;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.mainitem1{
+    background-image: url(../flashback/images/editable-team_03.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position-x: 25px;
+    background-position-y: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainitem2{
+    background-image: url(../flashback/images/star_03.png);
+    background-repeat: no-repeat;
+    background-size: 64px 56px;
+    background-position-x: 15px;
+    background-position-y: 20px;
+}
+
+.mainitem3{
+    background-image: url(../flashback/images/reach-you-audients_03.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position-x: 25px;
+    background-position-y: 25px;
+}
+
+.mainitem4, .mainitem5, .mainitem6{
+    text-align: center;
+    font-family: Raleway, serif;
+    font-size: 22px;
+    color: black;
+    margin-top: 30px;
+}
+
+.mainitem4>p, .mainitem5>p, .mainitem6>p{
+    margin-top: 25px;
+    font-family: HelveticaNeue, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color:gray;
+}
+
+.notify{
+    position: relative;
+    top:600px;
+    width: 1600px;
+    height: 430px;
+    background-color: lightgray;
+    margin-left: auto;
+    margin-right: auto;
+}
