@@ -3,20 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Table</title>
-
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header align="center">
-		<a href="page1.html">Главное меню</a>
-		<a href="page2.html">Новости</a>
-		<a href="page3.html">Галерея</a>
-		<a href="page4.html">О нас</a>
-		<h1 id="top" align="center">Портфолио "Поплавок&Co"</h1>
-	</header>
-	<div align="center">
-		<h2>Регистрация</h2>
-	</div>
-	<form action="*.php" align="center">
+	<div class="body1">
+		<div class="main">
+			<header id="nav" align="center">
+				<ul class="menu">
+					<li><a href="page1.html">Главное меню</a></li>
+					<li><a href="page2.html">Новости</a></li>
+					<li><a href="page3.html">Галерея</a></li>
+					<li><a href="page4.html">О нас</a></li>
+				</ul>
+			</header>
+			<div align="center">
+				<h1 id="top"  align="center">Портфолио "Поплавок&Co"</h1>
+				<h2>Регистрация</h2>
+			</div>
+			<form action="*.php" align="center">
 		<p>Логин:
 			<input type="text" name="login" maxlength="25" size="30">
 		</p>
@@ -35,11 +39,12 @@
 		<textarea name="comment"  cols="30" rows="10" placeholder="Комментарий"></textarea>
 		<br>
 		<input type="submit" value="Регистрация">
-	</form>
-	
-	<a href="#top" align="right"> <img src="image/arrow.svg" alt="arrow" width="30"></a>
+			</form>
+		</div>
+			<a  class="back" href="#top" align="right"> <p align="botton"> <img src="image/arrow.svg" align="center" alt="arrow" width="30"> </p></a>
+	</div>
 	<footer>
 		<p>&copy Все права защищены. Веб-сайт. 2019</p>
 	</footer>
-</body>
 </html>
+</body>

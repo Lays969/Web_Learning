@@ -3,22 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header align="center">
-		<a href="page1.html">Главное меню</a>
-		<a href="page2.html">Новости</a>
-		<a href="page3.html">Галерея</a>
-		<a href="page4.html">О нас</a>
-		<h1 id="top" align="center">Новости</h1>
-	</header>
-	<div align="center">
-		<a href="#feb">Февраль</a>
-		<a href="#jan">Январь</a>
-		<a href="#dec">Декабрь</a>
-		<a href="#erl">Ранее</a>
-	</div>
-	<div>
+	<div class="body1">
+		<div class="main">
+			<header id="nav" align="center">
+				<ul class="menu">
+					<li><a href="page1.html">Главное меню</a></li>
+					<li><a href="page2.html">Новости</a></li>
+					<li><a href="page3.html">Галерея</a></li>
+					<li><a href="page4.html">О нас</a></li>
+				</ul>
+			</header>
+			<div align="center">
+				<a href="#feb">Февраль</a>
+				<a href="#jan">Январь</a>
+				<a href="#dec">Декабрь</a>
+				<a href="#erl">Ранее</a>
+			</div>
+			<div>
 		<h2 id="feb" align="center">Февраль</h2>
 		<table align="center" width="800">
 			<tr>
@@ -30,8 +34,8 @@
 				</td>
 			</tr>
 		</table>
-	</div>
-	<div>
+			</div>
+			<div>
 		<h2 id="fjan" align="center">Январь</h2>
 		<table align="center" width="800">
 			<tr>
@@ -42,8 +46,8 @@
 			</td>
 			</tr>
 		</table>
-	</div>
-	<div>
+			</div>
+			<div>
 		<h2 id="dec" align="center">Декабрь</h2>
 		<table align="center" width="800">
 			<tr>
@@ -55,9 +59,9 @@
 				</td>
 			</tr>
 		</table>
-	</div>
-	<div>
-		<h2 id="erl" align="center">Ранее</h2>s
+			</div>
+			<div>
+		<h2 id="erl" align="center">Ранее</h2>
 		<table align="center" width="800">
 			<tr>
 				<td><img src="image/LeBron_James.jpg" width="100" alt="Ранее"></td>
@@ -67,11 +71,10 @@
 				<p>Опубликовано<time datetime="2018-11-27"> 27 ноября 2018</time></p>
 				</td>
 		</table>
+			</div>
+		</div>	
+			<a class='back' href="#top" align="right"> <img src="image/arrow.svg" alt="arrow" width="30"></a>
 	</div>
-
-
-
-	<a href="#top" align="right"> <img src="image/arrow.svg" alt="arrow" width="30"></a>
 	<footer>
 		<p>&copy Все права защищены. Веб-сайт. 2019</p>
 	</footer>
