@@ -1,0 +1,952 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* * * * * * * * * * * * * * * * * * *
+    Большие экраны
+ * * * * * * * * * * * * * * * * * * */
+@media only screen  and (min-width: 1824px) {
+
+    body{
+        background-color: #eee;
+    }
+    /* * * * * * * * * * * *
+        Подключение шрифтов к блокам
+    * * * * * * * * * * * */
+    li > a,
+    .btn,
+    .menu,
+    .info-row-1,
+    .content-name,
+    .block__name,
+    .slider__name,
+    .latest-works__name,
+    .blog__site-theme,
+    .blog__date,
+    .feedback__info-name
+    {
+        font-family: "Montserrat";
+    }
+
+    .mini-btn,
+    .info-row-2,
+    .content-info,
+    .block__info,
+    .extended-info,
+    .slider__post,
+    .content__categories,
+    .latest-works__genre,
+    .our-works__text,
+    .our-works__btn,
+    .blog__autor,
+    .blog__extra-information,
+    .companies__text,
+    .companies__author,
+    .feedback__extended-info,
+    .feedback__form,
+    .feedback__btn,
+    .feedback__extra-info,
+    .footer__info
+    {
+        font-family: "Roboto Slab";
+    }
+
+    /* * * * * * * * * * * *
+        Стили для шапки
+    * * * * * * * * * * * */
+    header{
+        height: 770px;
+        width: 100%;
+        color: #fff;
+        background-color: #eee;
+    }
+
+    .container{
+        margin: auto;
+        width:1600px;
+        height: 100%;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+
+    .h-background {
+        height: 100%;
+        width: 100%;
+        background-image: url("../Image/header.png");
+        background-size: 500px 202px;
+        background-position: -16px -6px;
+        background-repeat: no-repeat;
+    }
+    
+    .logo{
+        position: relative;
+        left: 215px;
+        width: 100px;
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .menu{
+        position: absolute;
+        top: 35px;
+        width: 1600px;
+    }
+
+    nav{
+        position: absolute;
+        left: 830px;
+        top: 0;
+        width: 555px;
+        text-align: center;
+        list-style: none;
+    }
+
+    .menu-item {
+        margin: 0 15px;
+        display: inline-block;
+        text-align: center;
+        min-width: 45px;
+        max-width: 60px;
+        font-family: sans-serif;
+        font-size: 18px;
+    }
+
+    .menu-item:first-child{
+        margin-left: 0;
+    }
+
+    .menu-item:last-child{
+        margin-right: 0;
+    }
+
+    li > a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .info{
+        position: relative;
+        left:500px;
+        top:315px;
+        height: 200px;
+        width: 600px;
+        text-align: center;
+    }
+
+    .info-row-1{
+        font-size: 48px;
+    }
+
+    .info-row-2{
+        font-size: 20px;
+        line-height: 24px;
+        padding-top: 16px;
+    }
+
+    .info-row-3{
+        margin: 40px auto auto auto;
+        font-size: 16px;
+
+    }
+
+    .btn{
+        height: 50px;
+        width: 180px;
+        border: 2px solid #fff;
+        border-radius: 2px;
+        line-height: 50px;
+        cursor: pointer;
+        transition-duration: 1s;
+        transition-timing-function: cubic-bezier(.55,.09,.68,.53);
+    }
+
+    .btn:hover{
+        color: #c0301c;
+        background-color: #fff;
+    }
+
+
+    /* * * * * * * * * * * *
+        Стили для блока "Сервис"
+    * * * * * * * * * * * */
+    .services{
+        height: 580px;
+        width: 1600px;
+        background-color: #fff;
+    }
+
+    .content{
+        position: relative;
+        top: 90px;
+        height: 400px;
+        width: 1140px;
+        margin: auto;
+        color: #555555;
+    }
+
+    .content-name{
+        margin: auto;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .content-name:before{
+        content: '';
+        position: absolute;
+        top: 48px;
+        left: 545px;
+        height: 2px;
+        width: 50px;
+        background-color: #565656;
+    }
+
+    .content-info{
+        position: relative;
+        top: 50px;
+        margin: auto;
+        width: 480px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .content-block{
+        position: relative;
+        top: 120px;
+        height: 220px;
+        width: 100%;
+        font-size: 14px;
+    }
+    .block-1,
+    .block-2,
+    .block-3{
+        width: 365px;
+        margin: 0 9px;
+        display: inline-block;
+    }
+
+    .block-1{
+        margin-left: 0;
+    }
+
+    .block-3{
+        margin-right: 0;
+    }
+
+    .icon{
+        height: 86px;
+        width: 86px;
+        border: 2px solid #dcdcdc;
+        border-radius: 90px;
+        margin: auto;
+    }
+
+    .frst-icon{
+        background-color: #a53323;
+        background-image: url("../Image/icon/fa-font.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .scnd-icon{
+        background-image: url("../Image/icon/fa-code.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .thrd-icon{
+        background-image: url("../Image/icon/fa-support.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .block__name{
+        margin: 25px 0 15px 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .block__info{
+        line-height: 24px;
+        text-align: center;
+    }
+
+    /* * * * * * * * * * * *
+        Стили для блока "О нас"
+    * * * * * * * * * * * */
+    .about_us{
+        height: 850px;
+        width: 1600px;
+        background-color: #f8f8f8;
+    }
+
+    .about{
+        width: 110px;
+        font-stretch: expanded;
+    }
+
+    .extended-info{
+        height: 120px;
+        width: 100%;
+        margin-top: 125px;
+        font-size: 14px;
+        font-stretch: normal;
+        line-height: 24px;
+        display: block;
+    }
+
+    .info-1,
+    .info-2{
+        width: 555px;
+        display: inline-block;
+        text-align: justify;
+    }
+
+    .info-1{
+        margin-right: 25px;
+    }
+
+    .slider{
+        height: 320px;
+        width: 100%;
+        margin-top: 70px;
+        /*background-color: #c0301c;*/
+    }
+
+    .swiper-container{
+        height: 310px;
+    }
+
+    .swiper-slide{
+        width: 260px;
+    }
+
+    .slider__main-block{
+        height: 100%;
+        color: #555555;
+        text-align: center;
+    }
+
+    .slider__contacts{
+        position: absolute;
+        top: 0px;
+        height: 250px;
+        width: 100%;
+        opacity: 0;
+
+    }
+
+    .slider__contacts:hover{
+        height: 250px;
+        width: 100%;
+        background-color: rgba(85, 85, 85, 0.502);
+        opacity: 1;
+        transition: 0.6s;
+    }
+
+    .slider__contacts > div{
+        height: 28px;
+        width: 28px;
+        background-color: #c0301c;
+        display: inline-block;
+    }
+
+    .slider__photo{
+        height: 250px;
+    }
+
+    .slider__facebook{
+        position: absolute;
+        top: 190px;
+        left: 75px;
+    }
+    .slider__facebook > img{
+        margin-top: 6px;
+    }
+
+    .slider__twitter{
+        position: absolute;
+        top: 190px;
+        left:calc(75px + 28px + 3px);
+    }
+    .slider__twitter > img{
+        margin-top: 7px;
+    }
+
+    .slider__google{
+        position: absolute;
+        top: 190px;
+        left: calc(75px + (28px + 3px) * 2);
+    }
+    .slider__google > img{
+        margin-top: 6px;
+    }
+
+    .slider__linkedin{
+        position: absolute;
+        top: 190px;
+        left: calc(75px + (28px + 3px) * 3);
+    }
+    .slider__linkedin > img{
+        margin-top: 5px;
+    }
+
+    .slider__name{
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+
+    .slider__post{
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+
+
+    /* * * * * * * * * * * *
+        Стили для блока "Последние работы"
+    * * * * * * * * * * * */
+    .latest-works{
+        height: 1380px;
+        width: 1600px;
+    }
+
+    .content__categories{
+        margin: 50px;
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .__categories{
+        display: inline-block;
+        margin-right: 29px;
+        cursor: pointer;
+    }
+
+    .__categories:last-child{
+        margin-right: 0;
+    }
+
+    .latest-works__all{
+        color: #c0301c;
+    }
+
+    .latest-works__content{
+        height: 1020px;
+        width: 1140px;
+    }
+
+    .latest-works__content > div{
+        height: 1020px;
+        width: 100%;
+    }
+
+    .image-block{
+        height: 320px;
+        width: 360px;
+        margin-right: 26px;
+        background-color: #622534;
+    }
+
+    .image-block:nth-of-type(3n+3){
+        margin-right: 0;
+    }
+
+    .image-block:not(:nth-of-type(-n+3)){
+        margin-top: 26px;
+    }
+
+    .latest-works__background{
+        position: absolute;
+        top: 0;
+        height: 320px;
+        width: 360px;
+        opacity: 0;
+        color: #fff;
+    }
+
+    .latest-works__background:hover{
+        opacity: 1;
+        background-color: rgba(192, 48, 28, 0.702);
+    }
+    /*  Выборка первого/четвертого/седьмого элемента */
+    .latest-works__background:nth-of-type(3n+1){
+        left: 0;
+    }
+    /*  Выборка второго/пятого/восьмого элемента */
+    .latest-works__background:nth-of-type(3n+2){
+        left: calc(360px + 30px);
+    }
+    /*  Выборка третьего/шестого/девятого элемента */
+    .latest-works__background:nth-of-type(3n+3){
+        left: calc(360px * 2 + 60px);
+    }
+
+    .latest-works__background:nth-of-type(4),
+    .latest-works__background:nth-of-type(5),
+    .latest-works__background:nth-of-type(6)
+    {
+        top: calc(320px + 30px);
+    }
+    /*  Выборка последних трех элементов */
+    .latest-works__background:nth-last-of-type(-n+3){
+        top: calc(320px*2 + 60px);
+    }
+
+
+    .latest-works__name{
+        margin-top: 100px;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        cursor: default;
+    }
+
+    .latest-works__genre{
+        margin-top: 5px;
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+        cursor: default;
+    }
+
+    .latest-works__view{
+        margin: 25px auto auto;
+    }
+    .latest-works__view > img{
+        margin-left: 3px;
+    }
+
+    .mini-btn{
+        height: 38px;
+        width: 100px;
+        background-color: #fff;
+        color: #c0301c;
+        font-size: 14px;
+        line-height: 38px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    #latest-works__all-images{
+        position: absolute;
+        top:148px;
+        display: block;
+    }
+
+    #latest-works__branding-images{
+        position: absolute;
+        top:148px;
+        display: none;
+    }
+
+    #latest-works__design-images{
+        position: absolute;
+        top:148px;
+        display: none;
+    }
+
+    #latest-works__development-images{
+        position: absolute;
+        top:148px;
+        display: none;
+    }
+
+    #latest-works__strategy-images{
+        position: absolute;
+        top:148px;
+        display: none;
+    }
+
+
+    /* * * * * * * * * * * *
+        Подключение шрифтов к блоку с паралаксом
+    * * * * * * * * * * * */
+    .our-works{
+        height: 370px;
+        width: 1600px;
+        background-color: rgba(192, 48, 28, 0.6);
+        background-image: url('../Image/paralax.png');
+        background-blend-mode: multiply;
+}
+
+    .our-works__text{
+        padding-top: 90px;
+        color: #fff;
+        text-align: center;
+        font-size: 30px;
+        line-height: 44px;
+    }
+
+    .our-works__btn{
+        color: #fff;
+        text-align: center;
+        margin: 45px auto auto;
+    }
+
+
+
+    /* * * * * * * * * * * *
+        Подключение шрифтов к блокам
+    * * * * * * * * * * * */
+    .blog{
+        height: 1080px;
+        width: 1600px;
+        background-color: #fff;
+    }
+
+    .blog__first-container{
+        position: relative;
+        top: 120px;
+        height: 360px;
+        width: 100%;
+        display: block;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .blog__second-container{
+        position: relative;
+        top: 160px;
+    }
+
+    .blog__image{
+        position: absolute;
+        height: 320px;
+        width: 460px;
+    }
+
+    .blog__information{
+        position: relative;
+        top: 2px;
+        left: 500px;
+        height: 320px;
+        width: 650px;
+    }
+
+    .blog__date{
+        position: absolute;
+        top: 18px;
+        height: 60px;
+        width: 76px;
+        display: inline-block;
+        outline: 2px solid #555;
+        color: #777;
+        text-align: center;
+    }
+
+    .blog__date > strong{
+        padding: 18px 0;
+    }
+
+    .blog__info{
+        position: relative;
+        left: 100px;
+        height: 80px;
+        width: 360px;
+        display: inline-block;
+    }
+
+    .blog__site-theme{
+        position: relative;
+        top: 11px;
+        color: #c0301c;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    .blog__author{
+        position: relative;
+        bottom: -24px;
+        font-size: 13px;
+        line-height: 24px;
+        font-style: italic;
+    }
+
+    .color-red{
+        color: #c0301c;
+    }
+
+    .blog__extra-information{
+        position: relative;
+        top: 15px;
+        color: #555;
+        line-height: 24px;
+    }
+
+    .blog__read-more{
+        margin-top: 26px;
+        color: #c0301c;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+
+    /* * * * * * * * * * * *
+        Подключение шрифтов к блокам
+    * * * * * * * * * * * */
+    .companies{
+        height: 475px;
+        width: 1600px;
+        background-color: #f8f8f8;
+    }
+
+    .companies__content{
+        position: relative;
+        top: 90px;
+        height: 100%;
+        width: 980px;
+        margin: auto;
+        color: #555555;
+    }
+
+    .companies__logotypes > img{
+        text-align: center;
+        margin-right: 60px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .companies__logotypes > img:last-child{
+        margin-right: 0;
+    }
+
+    .companies__text{
+        font-size: 18px;
+        line-height: 30px;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .companies__author{
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .companies__slider-container{
+        height: 140px;
+        width: 790px;
+        margin: 60px auto auto;
+        overflow: hidden;
+    }
+
+    .swiper-wrapper{
+        height: 140px !important;
+    }
+
+
+    /* * * * * * * * * * * *
+        Стили для блока "Обратная связь"
+    * * * * * * * * * * * */
+    .feedback{
+        height: 660px;
+        width: 1600px;
+        background-color: #fff;
+    }
+
+    .feedback__information{
+        position: absolute;
+        top: 160px;
+        color: #555;
+        width: 270px;
+    }
+
+    .feedback__adress,
+    .feedback__hotline,
+    .feedback__e-mail{
+        position: relative;
+        height: 65px;
+    }
+
+    .feedback__info-name{
+        font-size: 14px;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+
+    .feedback__extended-info{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .feedback__adress::before{
+        content: url("../Image/icon/map-marker.png");
+        position: absolute;
+        left: -25px;
+        top: 5px;
+    }
+
+    .feedback__hotline{
+        margin-top: 35px;
+    }
+
+    .feedback__hotline::before{
+        content: url("../Image/icon/phone.png");
+        position: absolute;
+        left: -25px;
+        top: 5px;
+    }
+
+    .feedback__e-mail{
+        margin-top: 35px;
+    }
+
+    .feedback__e-mail::before{
+        content: url("../Image/icon/envelope.png");
+        position: absolute;
+        left: -25px;
+        top: 5px;
+    }
+
+    .feedback__form{
+        position: absolute;
+        left: 365px;
+        top: 165px;
+        width: 730px;
+    }
+
+    .feedback__user{
+        width: 333px;
+        height: 45px;
+        margin-bottom: 20px;
+        padding-left: 15px;
+        border: 1px solid #555;
+        background: #fff;
+        color: #555;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .feedback__user:nth-child(2n){
+        margin-left: 25px;
+    }
+
+    .feedback__user:focus{
+        border: 1px solid #c0301c;
+    }
+
+    .feedback__message{
+        height: 95px;
+        width: 713px;
+        padding-top: 10px;
+    }
+
+    .feedback__btn{
+        width: 170px;
+        height: 45px;
+        border: 1px solid #555;
+        background: #fff;
+        color: #555;
+        font-size: 12px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition-duration: 1s;
+        transition-timing-function: cubic-bezier(.55,.09,.68,.53);
+    }
+
+    .feedback__btn:hover{
+        color: #fff;
+        background-color: #c0301c;
+        border-color: #c0301c;
+    }
+
+    .feedback__extra-info{
+        position: absolute;
+        top: 273px;
+        left: 210px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .feedback__extra-info > span{
+        color: #c0301c;
+    }
+
+
+
+    /* * * * * * * * * * * *
+        Подключение шрифтов к блокам
+    * * * * * * * * * * * */
+    footer{
+        height: 310px;
+        width: 1600px;
+        margin: auto;
+        background-color: #c0301c;
+    }
+
+    .footer__images{
+        height: 31px;
+        width: 31px;
+        margin-right: 15px;
+        border: 2px solid #fff;
+        border-radius: 35px;
+        display: inline-block;
+    }
+
+    .footer__images:last-child{
+        margin-right: 0;
+    }
+
+    .footer__images > img{
+        vertical-align: middle;
+    }
+
+    .footer__container{
+        position: relative;
+        width: 1140px !important;
+        border: none;
+    }
+
+    .__footer{
+        position: relative;
+        top: 100px;
+        width: 201px;
+    }
+
+    .__footer:before{
+        top: 65px;
+        left: 70px !important;
+        background-color: #fff;
+    }
+    
+    .footer__info{
+        position: relative;
+        top: 160px;
+        width: 480px;
+        margin: auto;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * *
+    Настольные компьютеры и ноутбуки
+ * * * * * * * * * * * * * * * * * * */
+@media only screen and (min-width: 1224px) {
+    .h-background {
+        height: 100%;
+        width: 100%;
+        background-image: url("../Image/header.png");
+        background-size: 1649px 792px;
+        background-position: -14px -6px;
+        background-repeat: no-repeat;
+    }
+
+
+}
+
