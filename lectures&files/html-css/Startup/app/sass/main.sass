@@ -1,0 +1,570 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css")
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.7
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+
+b, strong
+	font-weight: bold
+
+ul, li
+	display: block
+	margin: 0
+	padding: 0
+
+.menu-link
+	text-decoration: none
+	color: #fff
+	&:hover
+		text-decoration: none
+		color: #fff	
+
+h1, h2, h3, h4, h5
+	line-height: 1.45
+
+h1, h2, h3, .subtitle, .about,
+	text-align: center
+
+h1
+	font-family: montserrat
+	color: #fff
+	font-size: 48px
+
+h2
+	font-family: montserrat
+	font-size: 20px
+	text-transform: uppercase
+	display: inline-block
+	margin-top: 100px
+	&:after
+  		content: ''
+  		display: block
+  		margin: 0 auto
+  		vertical-align: top
+  		height: 2px
+  		width: 50px
+  		background: $text
+  		margin-top: 20px
+
+
+h3
+	font-family: robotoslab
+	font-size: 16px
+	margin-top: 20px
+
+h4
+	font-family: montserrat
+	font-size: 14px
+	margin-top: 29px
+	margin-bottom: 24px
+	text-transform: uppercase
+br, p
+	margin: 0
+	padding: 0
+button:focus
+	outline: none
+	
+.button
+	font-family: montserrat
+	display: inline-block
+	border: 2px solid #fff
+	border-radius: 2px
+	color: #fff
+	text-decoration: none
+	background-color: transporent
+	background-size: border-box
+	width: 180px
+	height: 50px
+	font-size: 16px
+	text-transform: uppercase
+	line-height: 50px
+	text-align: center
+	transition: background-color .1s ease
+	cursor: pointer
+
+	&:focus, &:hover
+		background-color: transporent
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
+	&:active
+		background-color: darken($accent, 5%)
+	
+.header
+	background: url('../img/bg.jpg') no-repeat center top / cover
+	&-nav
+		padding-top: 40px
+		.logo
+			font-family: montserrat
+			font-size: 24px
+			font-weight: bold
+		.menu
+			font-family: montserrat
+			font-size: 14px
+			height: 40px
+			line-height: 40px
+			li
+				margin-left: 35px
+		.title
+			text-align: center
+			margin-top: 206px
+			.button
+					margin-top: 47px
+					margin-bottom: 260px
+			.subtitle
+				font-size: 20px
+				color: #fff
+.main
+	&-servise
+		text-align: center
+		margin-bottom: 100px
+		h4
+			text-align: center
+		&-icons
+			line-height: 88px
+			text-align: center
+			color: $accent
+			display: inline-block
+			width: 90px
+			height: 90px
+			border: 2px solid #ddd
+			border-radius: 50%
+			margin-top: 68px
+	&-about
+		background: $bggrey
+		&-item
+			margin-top: 70px
+			margin-bottom: 70px
+		.slider-block
+			text-align: center
+			margin-bottom: 100px
+			img
+				display: block
+				margin: 0 auto
+			.name
+				margin-top: 16px
+				font-family: montserrat
+				font-weight: bold
+				font-size: 14px
+				text-transform: uppercase
+			.job
+				margin-top: 8px
+				font-family: robotoslab
+				font-size: 13px
+	&-works
+		margin-bottom: 100px
+		&-title
+			text-align: center
+		&-tabs
+			
+			.nav-pills
+				// колхоз
+				margin-top: 20px
+				margin-left: calc(50% - 205px)
+				// не получается центрирование
+				.nav-item
+					
+					&-link
+						display: block
+						background-color:#fff
+						border: none
+						text-decoration: none
+						font-size: 16px
+						color: $text
+						margin-right: 20px
+						&:hover
+							color: $accent
+					.active,
+						color: $accent
+
+		.tab-content
+			margin-top: 60px
+			img
+				padding-bottom: 30px
+			&-card
+				position: relative
+				display: inline-block
+				&-overlay
+					position: absolute
+					width: 100% 
+					height: 320px
+					top: 0
+					left: 0
+					background-color: rgba(192,48,28,0.7)
+					opacity: 0
+					transition: opacity .3s
+					.link
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						color: #fff
+						text-align: center
+						a
+							display: inline-block
+							width: 100px
+							height: 38px
+							line-height: 38px
+							margin-top: 15px
+							color: $accent
+							text-align: center
+							background-color: #fff
+							font-family: RobotoSlab
+							font-size: 14px
+							text-transform: uppercase
+							&:hover
+								text-decoration: none
+								color: #fff
+								background-color: $accent
+								.fa
+									color: #fff
+							.fa
+								font-size: 18px
+								margin-left: 12px
+								color: $accent
+
+				&:hover 
+					.tab-content-card-overlay
+						opacity: 1
+	.parallax-window
+	   	min-height: 369px
+	   	background-color: rgba(192,48,28,0.7)
+	   	&-title
+	   		margin: 100px auto 0
+	   		p
+	   			font-family: RobotoSlab;
+  				font-size: 30px
+  				color: #fff
+  				text-align: center
+	&-blog
+		&-title
+			text-align: center
+			margin-bottom: 70px
+		.blog-1, .blog-2 
+			margin-top: 38px
+			.main-blog-news
+				margin-left: 20px
+				.flex
+					display: flex
+				&:hover
+					.title, .author a, .main-blog-news-more
+						color: $accent
+						text-decoration: none
+				&-data
+					display: flex
+					flex-direction: column
+					justify-content: center
+					text-align: center
+					width: 76px
+					height: 76px
+					border: 2px solid $text
+					.data
+						text-align: center
+						font-family: montserrat
+						font-weight: bold
+						font-size: 24px
+						line-height: 24px
+						color: #777
+					span
+						font-size: 14px
+						font-weight: bold
+						color: #777
+				&-title
+					margin-left: 26px
+					margin-top: 14px
+					.title
+						text-decoration: none
+						font-family: montserrat
+						font-size: 16px
+						color: $text
+						text-transform: uppercase
+					.author
+						font-size: 13px
+						color: #777
+						a
+							text-decoration: none
+							color: #777
+				&-text
+					margin-top: 23px
+				&-more
+					text-decoration: none
+					font-size: 13px
+					font-weight: bold
+					letter-spacing: 1.3px
+					text-transform: uppercase
+					color: #777
+					display: block
+					margin-top: 34px
+		.blog-2
+		margin-bottom: 100px
+	// где то тут кроется косяк
+	&-partners
+		background-color: $bggrey
+		.container
+			width: 900px
+			.main-partners-icons
+				padding-top: 100px
+				margin-bottom: 68px
+			.main-partners-comment
+				text-align: center
+				.text
+					width: 763px
+					em
+						font-size: 18px
+					.name
+						font-size: 20px
+						margin-top: 35px
+						margin-bottom: 40px
+	&-message
+		&-title
+			text-align: center
+		&-body
+			margin-top: 70px
+			.button-send
+				font-size: 12px
+				color: $text
+				text-transform: uppercase
+				text-decoration: none
+				border: 1px solid $text
+				display: block
+				width: 170px
+				height: 44px
+				text-align: center
+				line-height: 44px
+				margin-bottom: 100px
+				&:hover
+					background-color: $accent
+					color: #fff
+					border-color: #fff
+			.text
+				display: block
+				height: 44px
+				line-height: 44px
+				font-size: 12px
+				span
+					color: $accent
+			h4
+				margin: 0 0 10px 0
+			p
+				font-size: 12px
+			.address
+				display: flex
+				margin-bottom: 34px
+				&-icon
+					margin-right: 15px
+					width: 12px
+					position: relative
+				.fa
+					font-size: 21px
+					&:before
+						position: absolute
+						left: 0
+						top: 0
+			.phone
+				display: flex
+				margin-bottom: 34px
+				&-icon
+					margin-right: 15px
+					width: 12px
+					position: relative
+				.fa
+					font-size: 28px
+					&:before
+						position: absolute
+						left: 0
+						top: 0
+			.mail
+				display: flex
+				&-icon
+					margin-right: 15px
+					width: 12px
+					position: relative
+				.fa
+					font-size: 15px
+					&:before
+						position: absolute
+						left: 0
+						top: 0
+	.footer
+		text-align: center
+		background-color: $accent
+		h2
+			&:after
+				background: #fff
+			a
+				color: #fff
+				border: 1px solid #fff
+				border-radius: 50%
+				display: inline-block
+				width: 35px
+				height: 35px
+				text-align: center
+				padding-top: 3px
+				margin: 0 7px
+				&:hover
+					background: #fff
+					color: $accent
+		p
+			color: #fff
+			font-size: 12px
+			text-transform: uppercase
+			margin-top: 10px
+			margin-bottom: 100px
+			
+
+input, .form-control
+	width: 100%
+	margin-bottom: 20px
+	height: 44px
+	text-transform: uppercase
+	padding-left: 17px
+	border: 1px solid $text
+	font-size: 12px
+	&:hover, &:active
+		border-color: $accent
+	&:focus
+		outline: none
+
+.form-control
+	display: block
+	font-size: 12px
+	height: 104px
+	border-radius: 0px
+	padding-top: 13px
+	resize: none
+	box-shadow: none
+	&:focus, &:active, &:hover
+		box-shadow: none
+		border-color: $accent
+
+.blog-1:after
+  	content: ''
+  	display: block
+  	margin: 0 auto
+  	vertical-align: top
+  	height: 1px
+  	width: 1140px
+  	background: #bbb
+  	margin-top: 38px
+
+
+
+//Настройка карусели 
+
+    
+    // active slide
+
+
+  	// custom slick dots
+// или тут
+.custom-dots
+
+ 	li
+  		display: inline-block
+  		text-align: center
+  		margin-bottom: 100px
+  		width: 20px
+  		height: 13px
+  		padding: 0
+		button
+			border: none
+			border-radius: 50%
+			cursor: pointer
+			display: block
+			height: 13px
+			width: 13px
+			text-indent: -9999px
+			button:before
+				content: ''
+				height: 13px
+				width: 13px
+				background-color: #ddd
+				
+.custom-dots li button:hover, .custom-dots li.slick-active button
+	background-color: $accent
+.custom-dots li button:hover:before, .custom-dots li.slick-active button:before
+	background-color: $accent
+
+
+.arrow
+	z-index: 99
+	position: absolute
+	top: 106px
+	width: 35px
+	height: 38px
+	background-color: $accent
+	border: none
+	outline: none
+	&::active
+		border: none
+.prev
+	left: 11px
+.next
+	right: 11px
+.arrow-icons
+	color: #fff
+.slick-active
+	&:focus
+		outline: none
+	outline: none
+.slider
+	outline:none
+	&-block
+		&-pic
+			&-bg
+				position: relative
+				display: inline-block
+				&-overlay
+					position: absolute
+					width: 100%
+					height: 100%
+					top: 0
+					left: 0
+					background-color: rgba(85,85,85,0.5)
+					opacity: 0
+					transition: opacity .3s
+					.links
+						position: absolute
+						bottom: 0
+						left: 0
+						width: 100%
+						a
+							display: inline-block
+							width: 28px
+							height: 28px
+							line-height: 28px
+							color: #fff
+							margin-bottom: 32px
+							&:hover
+								color: #fff
+								background-color: $accent
+				&:hover 
+					.slider-block-pic-bg-overlay
+				  		opacity: 1
+			
+
+
+
+
+
+
+
+
+
+@import "media" // Always at the end
