@@ -1,0 +1,287 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+*
+  margin: 0
+  padding: 0
+
+.bc-gray
+  height: 100%
+  width: 100%
+  background: #4d67ac
+
+body
+  height: 1000px
+
+/* Styles for header
+
+.header
+  //position: fixed
+  height: 70px
+  width: 100%
+  background-color: #e5e5e5
+
+.header__content
+  height: 100%
+  margin: 0 40px
+  background-color: #546231
+  display: flex
+  justify-content: space-between
+
+.header-block
+  height: 50px
+  margin: auto 0
+
+.header-menu
+  width: 100px
+
+.burger-line
+  position: absolute
+  top: 8px
+  left: 10px
+  width: 30px
+  height: 3px
+  background-color: #ffffff
+  transition: .5s all
+
+.second, .third
+  top: 18px
+
+.fourth
+  top: 28px
+
+.main-menu
+  width: 407px
+  display: block
+  transform: translateY(10%)
+  max-width: 0
+  overflow: hidden
+  transition: .5s all
+  white-space: nowrap
+
+.main-menu__item
+  display: block
+  width: 100%
+  padding: 10px
+  color: #ffffff
+  text-decoration: none
+  background-color: #043c52
+  font-family: "Merriweather", sans-serif
+  text-align: center
+  text-transform: uppercase
+
+.main-menu__item:hover
+  color: #f8ed1d
+
+.header-block__menu:checked ~ .main-menu
+  max-width: 407px
+  font-size: 20px
+
+.header-block__menu:checked ~ .first
+  display: none
+
+.header-block__menu:checked ~ .second
+  transform: rotate(45deg)
+
+.header-block__menu:checked ~ .third
+  transform: rotate(-45deg)
+
+.header-block__menu:checked ~ .fourth
+  display: none
+
+
+.header-social
+  height: 20px
+  width: 120px
+  display: flex
+  justify-content: space-between
+
+.header-block__logo
+  height: 50px
+  width: 100px
+  background-color: red
+
+.circle-block
+  height: 20px
+  width: 20px
+  background-color: #858585
+  border-radius: 20px
+
+.header-block__vk
+  background: #0489a1 url('images/vk.png')
+
+//  Второй блок с слайдером
+.slider
+  height: 700px
+  width: 100%
+  min-width: 1200px // TODO:подправить до нужного значения
+  background-color: #645763
+
+.swiper-slide__title
+  margin-top: 163px
+  height: 61px
+  font: bold 48px/normal "Merriweather", sans-serif
+  text-align: center
+  color: black //#FAFAFA
+
+.swiper-slide__description
+  max-width: 630px // При необходимости подпраивть значение
+  margin: 40px auto auto
+  font: 600 26px/normal "Open Sans", sans-serif
+  text-align: center
+  color: black //#FAFAFA
+
+.button-link
+  display: block
+  height: 100%
+  width: 100%
+  text-decoration: none
+  color: #043c52
+
+.swiper-slide__btn
+  margin: 75px auto auto
+  //outline: 2px solid transparent
+
+.button
+  display: block
+  height: 70px
+  width: 290px
+  font: bold 18px/65px "Open Sans", sans-serif
+  text-align: center
+  text-decoration: none
+  text-transform: uppercase
+  color: #043c52
+  background-color: #f8ed1d
+  border-radius: 70px
+  .button:hover
+    box-shadow: 0 0 0 2px black
+    box-sizing: border-box
+    transition: box-shadow .4s
+
+//.button:hover
+//  box-shadow: 0 0 0 2px black
+//  // Применил box-shadow для отрисовки границ блока после прочтения
+//  // этой статьи https://webformyself.com/animaciya-border-v-css/
+//  // Самый главный минус - кривовато работает в Safari, нужно потестить
+//  box-sizing: border-box
+//  transition: box-shadow .4s
+
+.button:active
+  background-color: #fbf96e
+
+.swiper-slide__arrow
+  margin: 135px auto auto
+  height: 45px
+  width: 30px
+  background-color: #c4c4c4
+  border-radius: 30px
+
+.arrow-image
+  height: 100%
+  width: 100%
+
+.about-us
+  height: 1016px
+
+// Третий блок О нас
+.about-us__container-1
+  float: left
+  height: 1016px
+  width: 100%
+  max-width: 50%
+  background-color: #9e9c9c
+
+.about-us__container-2
+  //float: inline-end
+  margin-left: 50%
+  height: 1016px
+  max-width: 50%
+
+
+//.about-us__container-1,
+//.about-us__container-2
+//  display: inline-flex
+
+.about-us__information
+  height: 100%
+  margin-left: 90px
+
+.h3-title
+  font: bold 36px/normal "Merriweather", sans-serif
+  text-align: center
+  text-transform: uppercase
+  color: #043c52
+
+.about-us__title
+  padding-top: 100px
+  text-align: left
+
+.p-information
+  font: normal 18px/normal "Open Sans", sans-serif
+  color: black
+
+.about-us__paragraph-1,
+.about-us__paragraph-2,
+.about-us__paragraph-3,
+.about-us__paragraph-4
+  width: 780px
+
+.about-us__paragraph-1
+  margin-top: 40px
+  line-height: 38px
+
+.about-us__paragraph-2,
+.about-us__paragraph-3,
+.about-us__paragraph-4
+  margin-top: 50px
+  line-height: 38px
+
+.about-us__link
+  margin-top: 60px
+
+// Стили для четвертого блока "Почему мы"
+.gray
+  background-color: #eee
+
+.reasons__title
+  padding-top: 120px
+
+.benefits
+  margin: 100px auto 0
+  height: 670px
+  width: 1142px
+
+.benefit
+  display: flex
+  justify-content: space-between
+  height: 320px
+  width: 263px
+  background-color: #c4c4c4
+  border-radius: 10px
+
+.benefit-logo
+  display: block
+  height: 140px
+  width: 100%
+
+.benefit-logo__img
+  height: 100px
+  width: 100px
+  margin: 40px auto 20px
+  text-align: center
+  border-radius: 100px
+  background-color: #676666
+
+.benefit-logo::after
+  content: ''
+  height: 1px
+  width: 114px
+  background-color: #000
+
+.benefit-information
+  margin: 20px auto 0
+  height: 100px
+  width: 183px
+  line-height: normal
+  color: red
